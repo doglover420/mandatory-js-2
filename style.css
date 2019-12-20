@@ -1,0 +1,97 @@
+header {
+    background-image: linear-gradient(to left, #3c3c3c, #636365, #8d8e91, #b8bbc0, #e5ebf1);
+    padding: 10px;
+    margin: -8px;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(83, 79, 79);   
+}
+header h1 {
+    text-align: center;
+    font-size: 50px;
+    opacity: 70%;
+}
+header h1{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.bigger-flex-container {
+    margin-top: 20px;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-container {
+
+    display: flex;
+    border: 1px solid grey;
+    height: 150px;
+    width: 500px;
+}
+.flex-container .flex-item {
+    display: flex;
+    border: 2px solid grey;
+    width: 100%;
+}
+.flex-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    cursor: pointer;
+}
+.players  {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Press Start 2P', cursive;
+    color: grey;
+    margin-top: 20px;
+    
+}
+.points {
+    display:flex;
+    justify-content: space-evenly;
+}
+.restart {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+}
+button {
+    background-color: grey;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 30px;
+}
+#player1Info #p1Points h2 {
+    font-size: 50px;
+    text-align: center;
+    
+}
+#player2Info #p2Points h2 {
+    font-size: 50px;
+    text-align: center;
+}
+.line {
+    background-image: linear-gradient(to bottom, #464748, #545556, #626365, #717274, #808184, #8f9093, #9f9fa2, #afafb2, #c3c2c5, #d6d6d8, #ebeaeb, #ffffff);
+    height:590px;
+    width: 10px;
+    opacity: 40%;
+    margin-top: 18px;
+}
+.playerWon {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+    background-color: grey;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+}
+.playerWon h2 {
+    color: white;
+    text-align: center;
+}
+
+.playerWon.hidden {
+    opacity: 0;
+}
