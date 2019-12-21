@@ -51,10 +51,8 @@ function checkWinner() {
         }
       }
       if (count === 9) {
-          if (board[0] !== board[1] && board[1] !== board[2] ) {
           playerWon.classList.remove('hidden');
-          playerWonText.innerText = "It's a tie!";
-        }
+          playerWonText.innerText = "It's a tie!"; 
       }
    });
 } 
