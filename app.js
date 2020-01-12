@@ -50,7 +50,7 @@ function checkWinner() {
               count++;
         }
       }
-      if (count === 9) {
+      if (count === 9 && board[combo[0]] !== board[combo[1]] && board[combo[1]] !== board[combo[2]]) {
           playerWon.classList.remove('hidden');
           playerWonText.innerText = "It's a tie!"; 
       }
